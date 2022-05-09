@@ -1,0 +1,95 @@
+.landing-card {
+    margin: 8rem auto 0 auto;
+    width: 20rem;
+    background-color: var(--primary-bg);
+    padding: 1.5rem;
+    border-radius: 2px;
+    color: var(--primary-color);
+}
+
+.landing-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.landing-card>* {
+    margin: auto;
+}
+
+.landing-card h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--primary-color);
+    font-family: var(--logo-font);
+    font-weight: normal;
+}
+
+.landing-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0.75rem 0;
+    gap: 1rem;
+}
+
+.landing-inputs .label-with-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.landing-inputs label {
+    margin-bottom: 0.75rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-toggle {
+    cursor: pointer;
+}
+
+.landing-inputs input {
+    height: 2rem;
+    font-size: 1rem;
+    background-color: var(--primary-bg);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.secondary-cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondary-cta-section label {
+    margin-left: 8px;
+}
+
+.secondary-cta-section a {
+    font-size: 0.9rem;
+}
+
+.secondary-cta-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.landing-card button {
+    border: none;
+    height: 45px;
+    width: 100%;
+    border-radius: 2px;
+    color: var(--primary-bg);
+    background-color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.alternate-cta {
+    text-align: center;
+    font-size: 1rem;
+}
