@@ -83,7 +83,7 @@ const Habit = ({ name, status, id, archivedPage }) => {
           {archivedPage === false &&
             status !== "Failed" &&
             status !== "Completed" &&
-            habitFound.frequency < 2 && (
+            (habitFound.timesOrMins === "Mins" || habitFound.frequency < 2) && (
               <DoneIcon onClick={() => markHabitComplete(id)} />
             )}
           {archivedPage === false &&
