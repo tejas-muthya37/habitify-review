@@ -81,9 +81,7 @@ const HabitProvider = ({ children }) => {
       headers: {
         authorization: encodedToken,
       },
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    });
   };
 
   const unarchiveHabit = (habitFound, encodedToken) => {
@@ -101,9 +99,7 @@ const HabitProvider = ({ children }) => {
       headers: {
         authorization: encodedToken,
       },
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    });
   };
 
   const markHabitComplete = (id) => {
@@ -246,9 +242,7 @@ const HabitProvider = ({ children }) => {
           completedTimes: 0,
         },
       }),
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    });
   };
 
   const editHabit = (id) => {
@@ -277,9 +271,7 @@ const HabitProvider = ({ children }) => {
         authorization: encodedToken,
         "Content-Type": "application/json",
       },
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    });
   };
 
   const saveEditedHabit = (id, encodedToken) => {
@@ -316,9 +308,7 @@ const HabitProvider = ({ children }) => {
               endDate: habitDetails.endDate,
             },
           }),
-        })
-          .then((res) => res.json())
-          .then((data) => console.log(data));
+        });
       }
       return true;
     });

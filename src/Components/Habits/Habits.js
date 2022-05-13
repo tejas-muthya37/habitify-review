@@ -71,11 +71,7 @@ const Habits = ({ morningHabits, archivedHabits }) => {
         authorization: encodedToken,
         "Content-Type": "application/json",
       },
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => console.log(data));
+    });
   }, []);
 
   useEffect(() => {
@@ -87,11 +83,7 @@ const Habits = ({ morningHabits, archivedHabits }) => {
         authorization: encodedToken,
         "Content-Type": "application/json",
       },
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => console.log(data));
+    });
   }, []);
 
   return (
