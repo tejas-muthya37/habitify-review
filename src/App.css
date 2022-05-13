@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --primary-bg: #D4E4F7;
+    --primary-color: #341C09;
+    --border-color: #9f9f9f;
+    --secondary-font: 'Sacramento', cursive;
+    --logo-font: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+}
+
+.message-toast {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.75rem 1rem;
+}
+
+@media screen and (max-width: 1160px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+}
