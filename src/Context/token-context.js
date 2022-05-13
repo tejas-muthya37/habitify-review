@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const TokenContext = createContext();
 
 const TokenProvider = ({ children }) => {
-  var encodedTokenLocal = localStorage.getItem("ENCODED_TOKEN_3");
+  let encodedTokenLocal = localStorage.getItem("ENCODED_TOKEN_3");
 
   if (encodedTokenLocal === null) encodedTokenLocal = "";
 
