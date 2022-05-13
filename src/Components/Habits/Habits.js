@@ -3,7 +3,6 @@ import "./habits.css";
 import { useHabit } from "./../../Context/habit-context";
 import { useEffect, useState } from "react";
 import { useToken } from "../../Context/token-context";
-import axios from "axios";
 
 const Habits = ({ morningHabits, archivedHabits }) => {
   const [quoteOfDay, setQuoteOfDay] = useState("");
