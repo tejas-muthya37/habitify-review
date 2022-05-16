@@ -109,11 +109,18 @@ select {
     background-color: var(--primary-color);
     color: var(--primary-bg);
     border-radius: 2px;
-    cursor: pointer;
 }
 
 .Navbar .btn-authenticate {
     border-radius: 2px;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+}
+
+.btn-active {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 630px) {

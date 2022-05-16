@@ -87,11 +87,19 @@ select {
     background-color: var(--primary-color);
     color: var(--primary-bg);
     border-radius: 2px;
-    cursor: pointer;
 }
 
 .plus-one-icon {
     font-size: 1.25rem;
+}
+
+
+.btn-active {
+    cursor: pointer;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 1000px) {

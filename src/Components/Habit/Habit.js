@@ -227,6 +227,12 @@ const Habit = ({ name, status, id, archivedPage }) => {
                     Delete
                   </button>
                   <button
+                    disabled={habitDetails.name.length > 0 ? false : true}
+                    className={
+                      habitDetails.name.length > 0
+                        ? "btn-active"
+                        : "btn-disabled"
+                    }
                     onClick={(event) => {
                       saveEditedHabit(id, encodedToken);
                       event.preventDefault();
