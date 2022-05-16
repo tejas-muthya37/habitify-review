@@ -4,6 +4,8 @@ import Homepage from "./Screens/Homepage/Homepage";
 import Mockman from "mockman-js";
 import Authenticate from "./Screens/Authenticate/Authenticate";
 import RequiresAuth from "./RequiresAuth";
+import Empty from "./Components/Empty/Empty";
+import notFound from "./Media/404-page-not-found.png";
 
 function App() {
   return (
@@ -51,6 +53,10 @@ function App() {
               <Homepage archivedHabits={true} />
             </RequiresAuth>
           }
+        />
+        <Route
+          path="*"
+          element={<Empty pageNotFound={true} emptyImage={notFound} />}
         />
       </Routes>
     </BrowserRouter>
