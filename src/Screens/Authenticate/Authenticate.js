@@ -89,7 +89,7 @@ function Authenticate(props) {
   };
 
   const handleGuestLogin = () => {
-    emailRef.current.value = "tejas.muthya@gmail.com";
+    emailRef.current.value = "tejasmuthya@gmail.com";
     passwordRef.current.value = "tejasmuthya";
     handleAuth();
   };
